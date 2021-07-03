@@ -27,21 +27,23 @@
         </javaTypeResolver>
 
         <javaModelGenerator targetPackage="com.astonm.springbootdemo.pojo"
-                            targetProject="src/main/java">
+                            targetProject="G:\Project\JAVA\SpringBootDemo\src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mappers/content" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="mappers/content" targetProject="G:\Project\JAVA\SpringBootDemo\src\main\resources">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.astonm.springbootdemo.dao" targetProject="src/main/java">
+                             targetPackage="com.astonm.springbootdemo.dao" targetProject="G:\Project\JAVA\SpringBootDemo\src\main\java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="label_scarce_content_task" domainObjectName="LabelScarceContentTask" delimitIdentifiers="true">
+        <table tableName="user1" domainObjectName="User"
+               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MYSQL" identity="true" type="post"/>
         </table>
     </context>
