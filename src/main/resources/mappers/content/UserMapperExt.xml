@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.astonm.springbootdemo.dao.UserMapperExt" >
+    <resultMap id="BaseResultMap" type="com.astonm.springbootdemo.pojo.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="sex" property="sex" jdbcType="VARCHAR" />
+        <result column="phoneNumber" property="phonenumber" jdbcType="VARCHAR" />
+        <result column="addr" property="addr" jdbcType="VARCHAR" />
+        <result column="comment" property="comment" jdbcType="VARCHAR" />
+        <result column="lastLoginTime" property="lastlogintime" jdbcType="TIMESTAMP" />
+        <result column="signUpTime" property="signuptime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <select id="findAllUsers" resultMap="BaseResultMap">
+        select
+        *
+        from user1
+    </select>
+
+</mapper>
