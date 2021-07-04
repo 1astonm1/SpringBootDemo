@@ -1,6 +1,10 @@
 package com.astonm.springbootdemo.dao;
 
 import com.astonm.springbootdemo.pojo.User;
+import org.mapstruct.Mapper;
+import org.springframework.stereotype.Repository;
+
+@Repository
 
 public interface UserMapper {
     /**
