@@ -59,7 +59,7 @@ public class Swagger2Conf {
                 // api标题
                 .title("spirngbootDemo后台接口文档")
                 // api描述
-                .description("调用服务接口需要提前进行登录，调用[用户管理模块]下的[用户登录]接口，然后手动跳转到结果附带的登录地址")
+                .description("")
                 .termsOfServiceUrl("http://localhost:8080/")
                 // 版本号
                 .version("1.0.0")
@@ -69,9 +69,9 @@ public class Swagger2Conf {
                 .enable(SWAGGER_IS_ENABLE)
                 .apiInfo(apiInfo)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.astonm.springbootdemo"))
-//                .paths(PathSelectors.any())
-                .paths(PathSelectors.regex("/.*"))
+                .apis(RequestHandlerSelectors.basePackage("com.astonm.springbootdemo.controller"))
+                .paths(PathSelectors.any())
+//                .paths(PathSelectors.regex("/.*"))
                 .build()
                 .globalOperationParameters(params);
     }
